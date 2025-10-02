@@ -1,0 +1,113 @@
+<!--
+    Para iniciar el documento HTML se debe de colocar la etiqueta <!DOCTYPE html>
+    Esto indica al navegador que el documento es un archivo HTML5.
+    La forma mas rapida de crear un documento HTML es con la abreviacion: ! + tabulador
+-->
+<!--
+    Información del estudiante:
+    Nombre: Brandon Yoel Espinoza Paez
+    Carnet: SM24007931
+    Número de cedula: 117700598
+
+    Carrera: Ingeniería en Sistemas
+    Curso: Programación de Internet
+    Codigo del curso:II-51
+
+    Laboratorio 02 - HTML BASICO
+    Nombre del profesor: Ing. Fabián Chinchilla Mayorga
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LAB 02 - BYEP</title>
+    </head>
+    <body>
+    <!-- Primera parte del trabajo -->
+        <h1>Laboratio de Brandon Espinoza</h1>
+        <!-- Pruebas de titulos:
+            <h2>Titulo grado 2</h2>
+            <h3>Titulo de grado 3</h3>
+            <h4>Titulo de grado 4</h4>
+            <h5>Titulo de grado 5</h5>
+        -->
+        <!--
+            Para poner varias etiquetas debe de poner el asterisco *
+            Ejemplo: h1*6  (esto genera 6 etiquetas h1)
+        --> 
+
+        <p>Este es el segúndo laboratorio de Programación de Internet</p>
+        <p>Este laboratorio abordamos los temas de HTML y CSS</p>
+        <!--
+            Lista con números:
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        --> 
+        <!--
+            Lista modificada con CSS utilizando la etiqueta type""
+        -->
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    <!-- Segunda parte del trabajo -->
+        <h1>Objectivos</h1>
+        <!--
+            Lista con viñetas
+        --> 
+        <ul>
+            <li>Aprender a crear una pagina web basica</li>
+            <li>Familiarizarse con las etiquetas HTML</li>
+            <li>Entender el uso de CSS para el estilo</li>
+        </ul>
+    <!-- Tercera parte del trabajo -->
+        <h1>Tablas</h1>
+        <table>
+            <thead>
+                <tbody>
+                    <!-- Listas utilizando <th>
+                        <th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </th>
+                    -->
+                    <tr style="font-weight: bold;">
+                        <td >Nombre</td>
+                        <td>Edad</td>
+                        <td>Cuidad</td>
+                    </tr>
+                    <tr>
+                        <!--
+                            Para agregar un numero consecutivo se debe de colocar el simbolo dolar despues de la etiqueta dentro de corchetes
+                            Ejemplo: tr*3>td{$} (esto genera 3 filas con un numero consecutivo en cada celda)
+                        -->
+                        <td><a href="index.html" alt="Primera prueba de vinculo en texto">Ana</a></td>
+                        <td>25</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>30</td>
+                        <td>Barcelona</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>28</td>
+                        <td>Valencia</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+
+    <!-- Cuarta parte del trabajo -->
+        <a href="index.html" alt="Segunda prueba de vinculo">Visita Nuestro sitio web</a>
+        <img src="img/programando.jpg" alt="Ejemplo de imagen" style="width: 300px; height: auto;">
+        <p>Para más información, visita nuestro sitio web oficial</p>
+    </body>
+</html>

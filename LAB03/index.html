@@ -5,34 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LAB-03</title>
-  <style>
-    body{
-      background-color: rgba(0, 0, 0, 0.623);
-    }
-    .form-group label {
-      display: block;
-      margin-left: 5px;
-      font-weight: bold;
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .submit-button {
-      padding: 10px 50px;
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .submit-button:hover {
-      background-color: #2563eb;
-      /* Un azul más oscuro al pasar el mouse */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -56,8 +29,7 @@
     <section>
       <form action="#" method="post">
         <fieldset>
-          <legend>Registro de Usuario</legend>
-
+          <h2>Registro de Usuario</h2>
           <div class="form-group">
             <label for="username">Nombre de Usuario:</label>
             <input class="form-input" type="text" id="username" name="username" required>
@@ -73,7 +45,7 @@
 
           <fieldset>
             <legend>Genero</legend>
-            <div>
+            <div class="columnsGrid">
               <div>
                 <input type="radio" value="m" name="genero" id="g-m">
                 <label for="g-m">Masculino</label>
@@ -83,19 +55,20 @@
                 <label for="g-f">Femenino</label>
               </div>
               <div>
-                <input type="radio" value="o" name="genero" id="g-o">
-                <label for="g-o">Otro</label>
-              </div>
-              <div>
                 <input type="radio" value="n" name="genero" id="g-n">
                 <label for="g-n">Prefiero no decirlo</label>
               </div>
+              <div>
+                <input type="radio" value="o" name="genero" id="g-o">
+                <label for="g-o">Otro</label>
+              </div>
+              
             </div>
           </fieldset>
 
           <fieldset>
             <legend>Seleccione sus intereses:</legend>
-            <div>
+            <div class="columnsGrid">
               <div>
                 <input type="checkbox" name="intereses" id="interes1" value="programacion">
                 <label for="interes1">Programación</label>
@@ -112,6 +85,22 @@
                 <input type="checkbox" name="intereses" id="interes4" value="ciencia">
                 <label for="interes4">Ciencia de Datos</label>
               </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes5" value="contabilidad">
+                <label for="interes5">Contabilidad</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes6" value="fotografia">
+                <label for="interes6">Fotografía</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes7" value="medicina">
+                <label for="interes7">Medicina</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes8" value="ingles">
+                <label for="interes8">Ingles</label>
+              </div>
           </fieldset>
 
           <button class="submit-button" type="submit">Registrar</button>
@@ -119,15 +108,15 @@
       </form>
     </section>
     <section>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
+      <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
         title="Video Incrustado" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   </main>
   <footer>
-    <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
-    <p>Contacto: <a href="mailto:fabian.chinchilla@uc.ac.cr">Fabian</p>
+    <p>&copy; 2025 Plataforma Educativa Universidad Central - BE</p>
+    <p>Email de contacto: <a href="mailto:brandonyep77@gmail.com">Brandon Yoel Espinoza Páez</p>
   </footer>
 </body>
 

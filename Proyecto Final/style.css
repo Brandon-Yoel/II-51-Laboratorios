@@ -1,0 +1,107 @@
+
+/*Cambios generales a etiquetas*/
+body, html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Cambios a etiquetas madre*/
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #F66661;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    align-items: center;
+}
+nav img{
+    height: 60px;
+    width: auto;
+    margin: auto;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul a{
+    padding: 25px 10px;
+    font-size: 20px;
+}
+nav ul a:hover{
+    background-color: rgb(29, 77, 150);
+    color: white;
+}
+/*Cuerpo de la pagina*/
+main{
+    width: 100%;
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+/*Pagina Incio de Seccion*/
+#contenedorLoggin{
+    width: 100%;
+    max-width: 1000px;
+}
+#contenedorLoggin form{
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    background-color: #c9e3eb;
+    border-radius: 7px;
+    border: 2px solid #7c7c7c;
+}
+#olvidoContrasena{
+    float: right;
+    font-size: 14px;
+    color: grey;
+}
+#contenedorLoggin h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contenedorLoggin input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+#contenedorLoggin button{
+    padding: 7px 28px;
+    float: right;
+}
+#contenedorLoggin p{
+    margin-top: 30px;
+}
+/*Pagina cursos*/
+#contenedorCursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.curso{
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    border: 1px solid;
+    margin: 10px;
+}
+.cursoTextos{
+    padding: 20px 15px;
+
+}
+.curso img{
+    width: 100%;
+    height: 260px;
+}

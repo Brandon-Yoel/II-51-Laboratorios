@@ -1,0 +1,49 @@
+classDiagram
+    class periodo{
+        -ano: int
+        -trimestre: int
+        -activo: booleano
+        +iniciarPeriodo(): void
+        +finalizarPeriodo(): void
+    }
+    class curso{
+        id: int 
+        nombre: string
+        periodo: string
+        profesor: string
+        creditos: int
+        estudiantes: string
+        +matricular(): void
+        +crearGrupoEstudiantes(): void
+        +asignaProfesor():void
+    }
+    class profesor{
+        -id: int
+        -nombre: string
+        -especialidad: string
+        -email: string
+        +agregaInformacion(): void
+        +eliminaInformacion(): void
+    }
+    class estudiante{
+        -id: int
+        -nombre: string
+        -idcarrera: string
+        -email: string
+        -materias: int
+        -creditos: int
+        -porcentajeCarrera: int
+        +registrar(): void
+        +editarPerfil(): void
+        +consultarCursos(): List<Curso>
+    }
+    class usuario{
+        +correo: string
+        +contrasena: varchar
+        +cambiarContrasena(): void
+    }
+    
+    curso --> periodo: Se asigna a
+    profesor --> curso: Imparte 
+    usuario --> curso: Matricula
+    estudiante --> usuario: Crea

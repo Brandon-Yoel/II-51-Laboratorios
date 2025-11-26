@@ -7,12 +7,15 @@ classDiagram
         +finalizarPeriodo(): void
     }
     class curso{
-        id: int 
-        nombre: string
-        periodo: string
-        profesor: string
-        creditos: int
-        estudiantes: string
+        -id: int 
+        -codigo: int
+        -nombre: string
+        -creditos: int
+        -cupo: int
+        -periodo: string
+        -profesor: string
+        -grupo: string
+        -activo: booleano
         +matricular(): void
         +crearGrupoEstudiantes(): void
         +asignaProfesor():void
@@ -20,16 +23,17 @@ classDiagram
     class profesor{
         -id: int
         -nombre: string
-        -especialidad: string
         -email: string
+        -facultad: string
         +agregaInformacion(): void
         +eliminaInformacion(): void
     }
     class estudiante{
         -id: int
+        -idEstudiante: string
         -nombre: string
-        -idcarrera: string
         -email: string
+        -idcarrera: string
         -materias: int
         -creditos: int
         -porcentajeCarrera: int

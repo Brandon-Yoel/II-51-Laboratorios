@@ -9,6 +9,7 @@ async function cargarCursos() {
         console.error("Error al cargar cursos:", error);
         return;
     }
+    
     let listaCursos = document.getElementById("listaCursos");
     cursos.forEach(curso => {
         let fila = document.createElement("tr");

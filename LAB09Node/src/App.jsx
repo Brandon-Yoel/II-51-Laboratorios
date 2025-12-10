@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import boy from './assets/boy.png'
@@ -9,13 +9,6 @@ import LikeButton from './LikeButton'
 function App() {
   const [age, setAge] = useState(0)
   const [isAdult, setIsAdult] = useState(false)
-
-  // Hook useEffect
-  useEffect(() =>{
-    setIsAdult(age >= 18)
-  }
-  , [age])
-
   return (
     <>
       <div>

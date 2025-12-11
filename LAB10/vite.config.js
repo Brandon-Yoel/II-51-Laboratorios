@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'LAB10',
+  base: 'LAB10/dist',
   plugins: [react()],
 })

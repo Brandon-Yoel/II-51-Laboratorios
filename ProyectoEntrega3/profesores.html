@@ -29,7 +29,6 @@
     </nav>
     <!--Contenedor principal-->
     <main class="container justify-content-md-center">
-        
         <!--Agregar, editar u eliminar-->
         <h2 class="mt-4">Lista de Profesores</h2>
         <form id="formProfesores">
@@ -42,12 +41,10 @@
                     <label>Nombre:</label>
                     <input type="text" class="form-control" id="nombreProfesor" required>
                 </div>
-
                 <div class="col-md-3 mb-3">
                     <label>Apellido:</label>
                     <input type="text" class="form-control" id="apellidoProfesor" required>
                 </div>
-
                 <div class="col-md-3 mb-3">
                     <label>Email:</label>
                     <input type="email" class="form-control" id="emailProfesor" required>
@@ -56,7 +53,6 @@
                     <label>Facultad:</label>
                     <input type="text" class="form-control" id="facultadProfesor" required>
                 </div>
-
                 <!-- BOTONES -->
                 <div class="col-12 d-flex justify-content-end">
                     <button type="button" class="btn btn-primary mr-2" id="btnAgregar">
@@ -88,7 +84,7 @@
             </div>
         </div>
     </main>
-    <footer class="m-0 bg-dark text-light text-center py-3">
+    <footer class="fixed-bottom bg-dark text-white p-3 text-center">
         <p>&copy 2000 - 2025 Brandon Yoel Espinoza Páez</p>
     </footer>
     <script type="module" src="./profesores.js"></script>

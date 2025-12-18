@@ -1,7 +1,5 @@
-main{
-    width: 100%;
-    height: 800px;
-}
+
+/*Cambios en el encabezado*/
 .bg-orange {
   background-color: #fd7e14 !important; /* Bootstrap orange */
 }
@@ -9,29 +7,25 @@ main{
     color: #000;
     background-color: #feb272;
 }
-
+/* Colores para los vinculos del NAV*/
 .nav-link {
     color: white;
 }
-
 .nav-link.active {
     background-color: orange;
     border-radius: 5px;
 }
-
 .nav-link {
     color: orange;
 }
-
 .nav-link:hover {
     color: darkorange;
 }
-
 .nav-link.active {
     color: orange;
     font-weight: bold;
 }
-
+/* Imagen de fondo del log in*/
 #imagenFondo {
     background-image: url("img/fondo.jpg");
     background-size: cover;
